@@ -4,6 +4,7 @@ html {
 }
 body {
     font-size: 100%;
+    color: white;
 }
 
 /*** navbar ***/
@@ -93,12 +94,12 @@ div.textnav.text-center p {
     color: greenyellow;
 }
 header {
-    background: url(media/home.jpg) ;
+    background: url(media/home.jpg) fixed ;
     min-height: 100vh;
 }
 @media screen and (min-width : 700px) {
     header {
-        background: url(media/homeDesktop.jpg) 100% 50%;
+        background: url(media/homeDesktop.jpg) fixed 100% 50%;
     }
     #navbarSupportedContent {
         min-height: 1vh;
@@ -173,3 +174,56 @@ div#logoArrow {
     justify-content: center;
     align-items: center;
 }
+/* Qui somme nous */
+#quisommenous {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2B2B2B;
+    opacity: 85%;
+}
+#imgabout {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.container-fluid {
+    min-height: 100vh;
+}
+.row {
+    min-height: 100vh;
+}
+@media screen and (min-width : 700px) {
+    #imgabout {
+        border-radius: 0%;
+        border: none;
+        width: 100%;
+        min-height: 100%;   
+    }
+    .col-12.col-md-6 {
+        padding: 0;
+    }
+}
+
+.box1 {
+    position: absolute;
+    top: 192%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+.box1 span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box1 span:nth-child(2) {
+    animation-delay: -0.2s;
+    transform: rotate(45deg) translate(-20px, -20px);
+}
+.box1 span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+/* /Qui somme nous */
