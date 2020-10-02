@@ -5,13 +5,7 @@ html {
 body {
     font-size: 100%;
 }
-div#grologo {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /*** navbar ***/
 #navbarSupportedContent {
     min-height: 94.4vh;
@@ -132,4 +126,50 @@ header {
         margin-bottom: 5px;
         margin-left: 20px;
     }
+}
+/* white Arrow */
+.box {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+.box span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box span:nth-child(2) {
+    animation-delay: -0.2s;
+    transform: rotate(45deg) translate(-20px, -20px);
+}
+.box span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+/* /white Arrow */
+div#logoArrow {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
