@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+body {
+    font-size: 100%;
+}
+div#grologo {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*** navbar ***/
+#navbarSupportedContent {
+    min-height: 94.4vh;
+    width: 100%; 
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 0;
+    background-color: #2B2B2B !important;
+    opacity: 85%;    
+}
+a.nav-link {
+    color: white !important;
+    text-align: center;
+    background-color: grey;
+    border: 2px groove white;
+    border-radius: 71px 71px 71px 71px;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+ul.navbar-nav.ml-auto {
+    margin-top: 30px;
+}
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;    
+}
+/* button navbar */
+button.navbar-toggler.collapsed {
+    margin-right: 9px;
+    margin-top: 12px;
+    background: #0f0e0e;
+    width: 45px;
+    height: 33px;
+    border: 1px solid grey !important;
+    border-radius: 20%;    
+}
+button.navbar-toggler {
+    margin-right: 9px;
+    margin-top: 12px;
+    background: #0f0e0e;
+    width: 45px;
+    height: 33px;
+    border: 1px solid grey !important;
+    border-radius: 20%;
+}
+.hamburger-inner {
+    display: block;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;     
+}
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block;
+}
+.hamburger-inner::before {
+    top: -7px;
+}
+.hamburger-inner::after {
+    bottom: -7px;
+}
+/* /button navbar */
+p.tel {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 25px;
+    margin-left: -150px;
+}
+.textnav.text-center {
+    color: white;
+    font-size: 0.8rem;
+}
+div.textnav.text-center p {
+    margin: 5px;
+}
+.vert {
+    color: greenyellow;
+}
+header {
+    background: url(media/home.jpg) ;
+    min-height: 100vh;
+}
+@media screen and (min-width : 700px) {
+    header {
+        background: url(media/homeDesktop.jpg) 100% 50%;
+    }
+    #navbarSupportedContent {
+        min-height: 1vh;
+        width: 100%; 
+    }
+    .textnav.text-center {
+        display: none;
+    }
+    a.nav-link {
+        background: none;
+        border: 0px;
+        margin-right: 20px ;
+        font-weight: bold;
+        
+    }
+    p.tel {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    ul.navbar-nav.ml-auto {
+        margin-bottom: 10px;
+    }
+    img#logo {
+        margin: 0;
+        margin-bottom: 5px;
+        margin-left: 20px;
+    }
+}
