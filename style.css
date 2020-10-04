@@ -193,13 +193,13 @@ div#logoArrow {
 }
 @media screen and (min-width : 700px) {
     #imgabout {
-        border-radius: 0%;
-        border: none;
-        width: 100%;
-        min-height: 100%;   
+        display: none;   
     }
     .col-12.col-md-6 {
         padding: 0;
+    }
+    .col-12.col-md-6.imgabout {
+        background: url(media/aboutDesktop.jpg) 100% fixed;
     }
 }
 
@@ -295,10 +295,6 @@ h2.burgersPhares {
 }
 @media screen and (min-width : 700px) {
     #imgbar {
-        border-radius: 0%;
-        border: none;
-        width: 100%;
-        min-height: 100%;
         display: none;   
     }
     .col-12.col-md-6.bar {
@@ -329,3 +325,26 @@ h2.burgersPhares {
     animation-delay: -0.4s;
 }
 /* /Bar */
+/* petit-déj */
+#petitdej {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2B2B2B;
+    opacity: 85%;
+}
+.containerdej {
+    background-color: #707070;
+    width: 250px;
+    height: 200px;
+    border: 1px solid #fff;
+}
+.col-12.col-md-6.imgdej {
+    display: none;
+}
+@media screen and (min-width : 700px) {
+    .col-12.col-md-6.imgdej {
+        display: inline;
+        background: url(media/petitdéjDesktop.jpg) 100% fixed;
+    }  
+}
+/* /petit-déj */
