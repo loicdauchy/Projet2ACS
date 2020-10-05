@@ -337,14 +337,130 @@ h2.burgersPhares {
     width: 250px;
     height: 200px;
     border: 1px solid #fff;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ou {
+    margin-top: 50px;
 }
 .col-12.col-md-6.imgdej {
     display: none;
+}
+.box4 {
+    position: absolute;
+    top: 492%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+.box4 span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box4 span:nth-child(2) {
+    animation-delay: -0.2s;
+    transform: rotate(45deg) translate(-20px, -20px);
+}
+.box4 span:nth-child(3) {
+    animation-delay: -0.4s;
 }
 @media screen and (min-width : 700px) {
     .col-12.col-md-6.imgdej {
         display: inline;
         background: url(media/petitdéjDesktop.jpg) 100% fixed;
-    }  
+    }
+    .formules {
+        display: flex;
+    }
+    .col-12.col-md-6.text-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ou {
+        margin-top: 130px;
+    }
+    h3.borderformules::after {
+        content: "";
+        box-sizing: border-box;
+        background-color: white;
+        width: 30%;
+        height: 1px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    h3.borderformules::before {
+        content: "";
+        box-sizing: border-box;
+        background-color: white;
+        width: 30%;
+        height: 1px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: -32.2%;
+    }
+    .ou::after {
+        content: "";
+        box-sizing: border-box;
+        background-color: white;
+        position: absolute;
+        width: 1px;
+        height: 13%;
+        margin-top: 4%;
+        margin-left: -1%;
+    }
+    .ou::before {
+        content: "";
+        box-sizing: border-box;
+        background-color: white;
+        position: absolute;
+        width: 1px;
+        height: 11%;
+        margin-top: -11.5%;
+        margin-left: 1.6%;
+    }
+    .formules::before {
+        content: "";
+        box-sizing: border-box;
+        background-color: white;
+        position: absolute;
+        width: 87%;
+        height: 1px;
+        margin-top: 40%;
+        margin-left: 7%;
+    }
+    .formules::after {
+        content: "";
+        box-sizing: border-box;
+        background-color: white;
+        position: absolute;
+        width: 1px;
+        height: 35%;
+        margin-left: 3%;
+        margin-top: 1.7%;   
+    }
+    .borduredej::after {
+        content: "";
+        box-sizing: border-box;
+        background-color: white;
+        position: absolute;
+        width: 1px;
+        height: 35%;
+        margin-left: -3%;
+        margin-top: 1.2%;
+        
+    }
 }
 /* /petit-déj */
+/* Evènements */
+
+/* /Evènements */
