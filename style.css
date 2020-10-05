@@ -532,3 +532,14 @@ img.img-fluid.evenements {
     }
 }
 /* /Evènements */
+/* contact */
+#contact {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2B2B2B;
+    opacity: 85%;
+}
+.col-12.col-md-6.form {
+    background: url(media/form.jpg) -10% fixed;
+}
+/* /contact */
