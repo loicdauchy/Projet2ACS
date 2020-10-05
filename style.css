@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
@@ -6,16 +8,25 @@ body {
     font-size: 100%;
     color: white;
 }
-
 /*** navbar ***/
+.nav-item :active {
+    color: #336970 !important;
+}
+.nav-item :hover {
+    color: #336970 !important;
+}
+a.nav-link.active {
+    color: #336970 !important;
+    text-transform: uppercase;
+}
 #navbarSupportedContent {
     min-height: 94.4vh;
-    width: 100%; 
+    width: 100%;
 }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     padding: 0;
     background-color: #2B2B2B !important;
-    opacity: 85%;    
+    opacity: 85%;
 }
 a.nav-link {
     color: white !important;
@@ -35,7 +46,7 @@ ul.navbar-nav.ml-auto {
     width: 50px;
     height: 50px;
     margin-left: 10px;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 /* button navbar */
 button.navbar-toggler.collapsed {
@@ -45,7 +56,7 @@ button.navbar-toggler.collapsed {
     width: 45px;
     height: 33px;
     border: 1px solid grey !important;
-    border-radius: 20%;    
+    border-radius: 20%;
 }
 button.navbar-toggler {
     margin-right: 9px;
@@ -59,14 +70,17 @@ button.navbar-toggler {
 .hamburger-inner {
     display: block;
 }
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
     width: 20px;
     height: 2px;
     background-color: white;
     border-radius: 4px;
-    position: absolute;     
+    position: absolute;
 }
-.hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner::before,
+.hamburger-inner::after {
     content: "";
     display: block;
 }
@@ -94,34 +108,40 @@ div.textnav.text-center p {
     color: greenyellow;
 }
 header {
-    background: url(media/home.jpg) fixed ;
+    background: url(media/home.jpg) fixed;
     min-height: 100vh;
 }
 @media screen and (min-width : 700px) {
     header {
         background: url(media/homeDesktop.jpg) fixed 100% 50%;
     }
+
     #navbarSupportedContent {
         min-height: 1vh;
-        width: 100%; 
+        width: 100%;
     }
+
     .textnav.text-center {
         display: none;
     }
+
     a.nav-link {
         background: none;
         border: 0px;
-        margin-right: 20px ;
+        margin-right: 20px;
         font-weight: bold;
-        
+
     }
+
     p.tel {
         margin: 0;
         margin-bottom: 5px;
     }
+
     ul.navbar-nav.ml-auto {
         margin-bottom: 10px;
     }
+
     img#logo {
         margin: 0;
         margin-bottom: 5px;
@@ -133,7 +153,7 @@ header {
     position: absolute;
     top: 92%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .box span {
     display: block;
@@ -157,9 +177,11 @@ header {
         opacity: 0;
         transform: rotate(45deg) translate(-20px, -20px);
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
@@ -193,21 +215,22 @@ div#logoArrow {
 }
 @media screen and (min-width : 700px) {
     #imgabout {
-        display: none;   
+        display: none;
     }
+
     .col-12.col-md-6 {
         padding: 0;
     }
+
     .col-12.col-md-6.imgabout {
         background: url(media/aboutDesktop.jpg) 100% fixed;
     }
 }
-
 .box1 {
     position: absolute;
     top: 192%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .box1 span {
     display: block;
@@ -254,6 +277,7 @@ h2.burgersPhares {
     #carouselExemple {
         display: none;
     }
+
     #carouselExemple1 {
         display: table;
     }
@@ -262,7 +286,7 @@ h2.burgersPhares {
     position: absolute;
     top: 292%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .box2 span {
     display: block;
@@ -295,8 +319,9 @@ h2.burgersPhares {
 }
 @media screen and (min-width : 700px) {
     #imgbar {
-        display: none;   
+        display: none;
     }
+
     .col-12.col-md-6.bar {
         background: url(media/barDesktop.jpg) fixed;
     }
@@ -305,7 +330,7 @@ h2.burgersPhares {
     position: absolute;
     top: 392%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .box3 span {
     display: block;
@@ -353,7 +378,7 @@ h2.burgersPhares {
     position: absolute;
     top: 492%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .box4 span {
     display: block;
@@ -377,17 +402,21 @@ h2.burgersPhares {
         display: inline;
         background: url(media/petitdéjDesktop.jpg) 100% fixed;
     }
+
     .formules {
         display: flex;
     }
+
     .col-12.col-md-6.text-center {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .ou {
         margin-top: 130px;
     }
+
     h3.borderformules::after {
         content: "";
         box-sizing: border-box;
@@ -398,6 +427,7 @@ h2.burgersPhares {
         margin-top: 20px;
         margin-left: 20px;
     }
+
     h3.borderformules::before {
         content: "";
         box-sizing: border-box;
@@ -408,6 +438,7 @@ h2.burgersPhares {
         margin-top: 20px;
         margin-left: -32.2%;
     }
+
     .ou::after {
         content: "";
         box-sizing: border-box;
@@ -418,6 +449,7 @@ h2.burgersPhares {
         margin-top: 4%;
         margin-left: -1%;
     }
+
     .ou::before {
         content: "";
         box-sizing: border-box;
@@ -428,6 +460,7 @@ h2.burgersPhares {
         margin-top: -11.5%;
         margin-left: 1.6%;
     }
+
     .formules::before {
         content: "";
         box-sizing: border-box;
@@ -438,6 +471,7 @@ h2.burgersPhares {
         margin-top: 40%;
         margin-left: 7%;
     }
+
     .formules::after {
         content: "";
         box-sizing: border-box;
@@ -446,8 +480,9 @@ h2.burgersPhares {
         width: 1px;
         height: 35%;
         margin-left: 3%;
-        margin-top: 1.7%;   
+        margin-top: 1.7%;
     }
+
     .borduredej::after {
         content: "";
         box-sizing: border-box;
@@ -457,8 +492,9 @@ h2.burgersPhares {
         height: 35%;
         margin-left: -3%;
         margin-top: 1.2%;
-        
+
     }
+
     #petitdej {
         border-bottom: 1px solid white;
     }
@@ -474,19 +510,21 @@ h2.burgersPhares {
 img.img-fluid.evenements {
     border: 1px solid white;
 }
-.col-12.col-md-2.dis.text-center{
+.col-12.col-md-2.dis.text-center {
     display: none;
 }
-.col-12.col-md-2.dis1.text-center{
+.col-12.col-md-2.dis1.text-center {
     display: none;
 }
 @media screen and (min-width : 700px) {
-    .col-12.col-md-2.dis.text-center{
+    .col-12.col-md-2.dis.text-center {
         display: table;
     }
-    .col-12.col-md-2.dis1.text-center{
+
+    .col-12.col-md-2.dis1.text-center {
         display: table;
     }
+
     .col-12.col-md-2.text-center.evenbleu {
         min-height: 100vh;
         color: black;
@@ -496,17 +534,21 @@ img.img-fluid.evenements {
         align-items: center;
         justify-content: center;
     }
+
     .col-12.col-md-2.text-center.evenbleu h2 {
         transform: rotate(270deg);
         font-size: 4.5rem;
         margin-top: 100px;
     }
+
     .col-md-8.d-flex.align-items-md-center.justify-content-md-around {
         min-width: 80%;
     }
+
     img.img-fluid.evenements {
         min-width: 200px;
     }
+
     .col-12.col-md-2.dis1.text-center::after {
         content: "";
         background-color: white;
@@ -516,6 +558,7 @@ img.img-fluid.evenements {
         margin-top: -60%;
         margin-left: -310%;
     }
+
     .col-12.col-md-2.dis1.text-center::before {
         content: "";
         background-color: white;
@@ -527,7 +570,7 @@ img.img-fluid.evenements {
     }
 }
 @media screen and (max-width : 700px) {
-    .col-12.col-md-2.text-center{
+    .col-12.col-md-2.text-center {
         max-height: 45%;
     }
 }
@@ -549,7 +592,7 @@ img.img-fluid.evenements {
 }
 #mapid {
     min-height: 50vh;
-    width: 100%; 
+    width: 100%;
 }
 input {
     background-color: #2B2B2B !important;
@@ -557,6 +600,12 @@ input {
     color: white !important;
     border: 1px solid white;
     width: 100% !important;
+}
+input:hover {
+    border: 1px solid #336970 !important;
+}
+textarea:hover {
+    border: 1px solid #336970 !important;
 }
 textarea {
     background-color: #2B2B2B !important;
@@ -566,7 +615,7 @@ textarea {
     width: 100% !important;
     padding: 10px;
 }
-::placeholder{
+::placeholder {
     color: white !important;
 }
 button.btn.btn-primary.form {
@@ -574,7 +623,7 @@ button.btn.btn-primary.form {
     color: white !important;
     border: 1px solid white;
     border-radius: 24px 24px 24px 24px;
-    width:100px;
+    width: 100px;
     margin-left: 33%;
 }
 form {
@@ -583,8 +632,9 @@ form {
 @media screen and (min-width : 700px) {
     #mapid {
         min-height: 100vh;
-        width: 100%; 
+        width: 100%;
     }
+
     .col-12.col-md-6.form {
         background: url(media/form.jpg) -10% fixed;
         display: flex;
@@ -593,9 +643,11 @@ form {
         align-items: center;
         min-height: 100vh;
     }
+
     form {
         width: 50%;
     }
+
     button.btn.btn-primary.form {
         width: 200px;
         margin-left: 33%;
@@ -605,6 +657,24 @@ form {
 /* Footer */
 footer {
     background-color: black;
-    min-height: 100vh;
+}
+.col-12.text-center.contact {
+    height: 15vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width : 700px) {
+    footer {
+        max-height: 62vh !important;
+    }
+
+    .row.footer {
+        min-height: 60vh;
+    }
+
+    .container-fluid.footer {
+        min-height: 60vh;
+    }
 }
 /* /footer */
