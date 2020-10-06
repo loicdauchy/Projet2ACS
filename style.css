@@ -287,6 +287,7 @@ h2.burgersPhares {
     top: 292%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 100000;
 }
 .box2 span {
     display: block;
