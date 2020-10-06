@@ -254,6 +254,16 @@ div#logoArrow {
 }
 /* /Qui somme nous */
 /* carousel */
+a.carte.btn.btn-default{
+    background-color: #2B2B2B;
+    opacity: 85%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+}
+a.carte.btn.btn-default:hover {
+    background-color: #336970 !important;
+}
 img.imgcaroussel {
     width: 100%;
     height: 100vh;
@@ -419,8 +429,12 @@ h2.burgersPhares {
 
     .ou {
         margin-top: 130px;
+    }  
+    #petitdej {
+        border-bottom: 1px solid white;
     }
-
+}
+@media screen and (min-width : 1400px) {
     h3.borderformules::after {
         content: "";
         box-sizing: border-box;
@@ -496,11 +510,7 @@ h2.burgersPhares {
         height: 35%;
         margin-left: -3%;
         margin-top: 1.2%;
-
-    }
-
-    #petitdej {
-        border-bottom: 1px solid white;
+    
     }
 }
 /* /petit-déj */
@@ -544,13 +554,7 @@ img.img-fluid.evenements {
     animation-delay: -0.4s;
 }
 @media screen and (min-width : 700px) {
-    .col-12.col-md-2.dis.text-center {
-        display: table;
-    }
-
-    .col-12.col-md-2.dis1.text-center {
-        display: table;
-    }
+    
 
     .col-12.col-md-2.text-center.evenbleu {
         min-height: 100vh;
@@ -599,6 +603,15 @@ img.img-fluid.evenements {
 @media screen and (max-width : 700px) {
     .col-12.col-md-2.text-center {
         max-height: 45%;
+    }
+}
+@media screen and (min-width : 1400px) {
+    .col-12.col-md-2.dis.text-center {
+        display: table;
+    }
+
+    .col-12.col-md-2.dis1.text-center {
+        display: table;
     }
 }
 /* /Evènements */
@@ -652,6 +665,9 @@ button.btn.btn-primary.form {
     border-radius: 24px 24px 24px 24px;
     width: 100px;
     /* margin-left: 33%; */   
+}
+button.btn.btn-primary.form:hover {
+    background-color: #336970 !important;
 }
 form {
     width: 80%;
@@ -739,6 +755,9 @@ footer {
 }
 .box7 span:nth-child(3) {
     animation-delay: -0.4s;
+}
+a.linkcontact {
+    color: white !important;
 }
 @media screen and (min-width : 700px) {
     footer {
