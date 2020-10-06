@@ -516,6 +516,29 @@ img.img-fluid.evenements {
 .col-12.col-md-2.dis1.text-center {
     display: none;
 }
+.box5 {
+    position: absolute;
+    top: 592%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box5 span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box5 span:nth-child(2) {
+    animation-delay: -0.2s;
+    transform: rotate(45deg) translate(-20px, -20px);
+}
+.box5 span:nth-child(3) {
+    animation-delay: -0.4s;
+}
 @media screen and (min-width : 700px) {
     .col-12.col-md-2.dis.text-center {
         display: table;
@@ -624,10 +647,37 @@ button.btn.btn-primary.form {
     border: 1px solid white;
     border-radius: 24px 24px 24px 24px;
     width: 100px;
-    margin-left: 33%;
+    /* margin-left: 33%; */   
 }
 form {
     width: 80%;
+}
+.bouton {
+    display: flex;
+    justify-content: center;
+}
+.box6 {
+    position: absolute;
+    top: 692%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box6 span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box6 span:nth-child(2) {
+    animation-delay: -0.2s;
+    transform: rotate(45deg) translate(-20px, -20px);
+}
+.box6 span:nth-child(3) {
+    animation-delay: -0.4s;
 }
 @media screen and (min-width : 700px) {
     #mapid {
@@ -647,10 +697,9 @@ form {
     form {
         width: 50%;
     }
-
     button.btn.btn-primary.form {
         width: 200px;
-        margin-left: 33%;
+        margin-right: ;
     }
 }
 /* /contact */
@@ -663,6 +712,30 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.box7 {
+    position: absolute;
+    top: 753%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(180deg);
+}
+.box7 span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box7 span:nth-child(2) {
+    animation-delay: -0.2s;
+    transform: rotate(45deg) translate(-20px, -20px);
+}
+.box7 span:nth-child(3) {
+    animation-delay: -0.4s;
 }
 @media screen and (min-width : 700px) {
     footer {
