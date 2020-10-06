@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans&display=swap');
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
@@ -7,6 +6,10 @@ html {
 body {
     font-size: 100%;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Architects Daughter', cursive;
 }
 /*** navbar ***/
 .nav-item :active {
@@ -108,12 +111,12 @@ div.textnav.text-center p {
     color: greenyellow;
 }
 header {
-    background: url(media/home.jpg) fixed;
+    background: url(media/home2.jpg) 80% fixed;
     min-height: 100vh;
 }
 @media screen and (min-width : 700px) {
     header {
-        background: url(media/homeDesktop.jpg) fixed 100% 50%;
+        background: url(media/homeDesktop2.jpg) fixed 100% 50%;
     }
 
     #navbarSupportedContent {
@@ -700,7 +703,6 @@ form {
     }
     button.btn.btn-primary.form {
         width: 200px;
-        margin-right: ;
     }
 }
 /* /contact */
