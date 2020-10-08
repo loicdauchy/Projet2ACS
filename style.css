@@ -23,8 +23,9 @@ a.nav-link.active {
     text-transform: uppercase;
 }
 #navbarSupportedContent {
-    min-height: 94.4vh;
+    /* min-height: 94.4vh; */
     width: 100%;
+    transition: 0.3s linear;
 }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     padding: 0;
