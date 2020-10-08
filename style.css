@@ -126,7 +126,7 @@ header {
     }
 
     .textnav.text-center {
-        display: none;
+       margin-left: 30px;
     }
 
     a.nav-link {
@@ -150,6 +150,11 @@ header {
         margin: 0;
         margin-bottom: 5px;
         margin-left: 20px;
+    }
+}
+@media screen and (min-width : 992px) {
+    .textnav.text-center {
+        display: none;
     }
 }
 /* white Arrow */
