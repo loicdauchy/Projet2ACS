@@ -205,6 +205,7 @@ div#logoArrow {
     min-height: 100vh;
     background-color: #2B2B2B;
     opacity: 85%;
+    padding: 20px;
 }
 #imgabout {
     border: 2px solid white;
@@ -217,6 +218,9 @@ div#logoArrow {
     min-height: 100vh;
 }
 @media screen and (min-width : 700px) {
+    #quisommenous {
+        padding: 0px;
+    }
     #imgabout {
         display: none;
     }
@@ -228,30 +232,31 @@ div#logoArrow {
     .col-12.col-md-6.imgabout {
         background: url(media/aboutDesktop.jpg) 100% fixed;
     }
+    .box1 {
+        position: absolute;
+        top: 192%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .box1 span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    .box1 span:nth-child(2) {
+        animation-delay: -0.2s;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    .box1 span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
 }
-.box1 {
-    position: absolute;
-    top: 192%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.box1 span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.box1 span:nth-child(2) {
-    animation-delay: -0.2s;
-    transform: rotate(45deg) translate(-20px, -20px);
-}
-.box1 span:nth-child(3) {
-    animation-delay: -0.4s;
-}
+
 /* /Qui somme nous */
 /* carousel */
 a.carte.btn.btn-default{
@@ -294,30 +299,30 @@ h2.burgersPhares {
     #carouselExemple1 {
         display: table;
     }
-}
-.box2 {
-    position: absolute;
-    top: 292%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100000;
-}
-.box2 span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.box2 span:nth-child(2) {
-    animation-delay: -0.2s;
-    transform: rotate(45deg) translate(-20px, -20px);
-}
-.box2 span:nth-child(3) {
-    animation-delay: -0.4s;
+    .box2 {
+        position: absolute;
+        top: 292%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100000;
+    }
+    .box2 span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    .box2 span:nth-child(2) {
+        animation-delay: -0.2s;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    .box2 span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
 }
 /* /carousel */
 /* Bar */
@@ -326,12 +331,16 @@ h2.burgersPhares {
     min-height: 100vh;
     background-color: #2B2B2B;
     opacity: 85%;
+    padding : 20px;
 }
 #imgbar {
     border: 2px solid white;
     border-radius: 50%;
 }
 @media screen and (min-width : 700px) {
+    #bar {
+        padding: 0px;
+    }
     #imgbar {
         display: none;
     }
@@ -339,30 +348,31 @@ h2.burgersPhares {
     .col-12.col-md-6.bar {
         background: url(media/barDesktop.jpg) fixed;
     }
+    .box3 {
+        position: absolute;
+        top: 392%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .box3 span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    .box3 span:nth-child(2) {
+        animation-delay: -0.2s;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    .box3 span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
 }
-.box3 {
-    position: absolute;
-    top: 392%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.box3 span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.box3 span:nth-child(2) {
-    animation-delay: -0.2s;
-    transform: rotate(45deg) translate(-20px, -20px);
-}
-.box3 span:nth-child(3) {
-    animation-delay: -0.4s;
-}
+
 /* /Bar */
 /* petit-déj */
 #petitdej {
@@ -370,6 +380,7 @@ h2.burgersPhares {
     min-height: 100vh;
     background-color: #2B2B2B;
     opacity: 85%;
+    padding: 20px;
 }
 .containerdej {
     background-color: #707070;
@@ -388,30 +399,11 @@ h2.burgersPhares {
 .col-12.col-md-6.imgdej {
     display: none;
 }
-.box4 {
-    position: absolute;
-    top: 492%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.box4 span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.box4 span:nth-child(2) {
-    animation-delay: -0.2s;
-    transform: rotate(45deg) translate(-20px, -20px);
-}
-.box4 span:nth-child(3) {
-    animation-delay: -0.4s;
-}
+
 @media screen and (min-width : 700px) {
+    #petitdej {
+        padding: 0px;
+    }
     .col-12.col-md-6.imgdej {
         display: inline;
         background: url(media/petitdéjDesktop.jpg) 100% fixed;
@@ -432,6 +424,29 @@ h2.burgersPhares {
     }  
     #petitdej {
         border-bottom: 1px solid white;
+    }
+    .box4 {
+        position: absolute;
+        top: 492%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .box4 span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    .box4 span:nth-child(2) {
+        animation-delay: -0.2s;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    .box4 span:nth-child(3) {
+        animation-delay: -0.4s;
     }
 }
 @media screen and (min-width : 1400px) {
@@ -520,6 +535,7 @@ h2.burgersPhares {
     min-height: 100vh;
     background-color: #2B2B2B;
     opacity: 85%;
+    padding: 20px;
 }
 img.img-fluid.evenements {
     border: 1px solid white;
@@ -530,31 +546,10 @@ img.img-fluid.evenements {
 .col-12.col-md-2.dis1.text-center {
     display: none;
 }
-.box5 {
-    position: absolute;
-    top: 592%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.box5 span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.box5 span:nth-child(2) {
-    animation-delay: -0.2s;
-    transform: rotate(45deg) translate(-20px, -20px);
-}
-.box5 span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-@media screen and (min-width : 700px) {
-    
+@media screen and (min-width : 768px) {
+    #evenements {
+        padding: 0px;
+    }
 
     .col-12.col-md-2.text-center.evenbleu {
         min-height: 100vh;
@@ -598,6 +593,29 @@ img.img-fluid.evenements {
         height: 310%;
         margin-top: -75%;
         margin-left: 70%;
+    }
+    .box5 {
+        position: absolute;
+        top: 592%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .box5 span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    .box5 span:nth-child(2) {
+        animation-delay: -0.2s;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    .box5 span:nth-child(3) {
+        animation-delay: -0.4s;
     }
 }
 @media screen and (max-width : 700px) {
@@ -676,29 +694,6 @@ form {
     display: flex;
     justify-content: center;
 }
-.box6 {
-    position: absolute;
-    top: 692%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.box6 span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.box6 span:nth-child(2) {
-    animation-delay: -0.2s;
-    transform: rotate(45deg) translate(-20px, -20px);
-}
-.box6 span:nth-child(3) {
-    animation-delay: -0.4s;
-}
 @media screen and (min-width : 700px) {
     #mapid {
         min-height: 100vh;
@@ -720,6 +715,29 @@ form {
     button.btn.btn-primary.form {
         width: 200px;
     }
+    .box6 {
+        position: absolute;
+        top: 692%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .box6 span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    .box6 span:nth-child(2) {
+        animation-delay: -0.2s;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    .box6 span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
 }
 /* /contact */
 /* Footer */
@@ -732,30 +750,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.box7 {
-    position: absolute;
-    top: 753%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform: rotate(180deg);
-}
-.box7 span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.box7 span:nth-child(2) {
-    animation-delay: -0.2s;
-    transform: rotate(45deg) translate(-20px, -20px);
-}
-.box7 span:nth-child(3) {
-    animation-delay: -0.4s;
-}
+
 a.linkcontact {
     color: white !important;
 }
@@ -771,5 +766,98 @@ a.linkcontact {
     .container-fluid.footer {
         min-height: 60vh;
     }
+    .box7 {
+        position: absolute;
+        top: 753%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: rotate(180deg);
+    }
+    .box7 span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    .box7 span:nth-child(2) {
+        animation-delay: -0.2s;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    .box7 span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
 }
 /* /footer */
+/* petite modif et debug sur responsive tablette et mobile */
+@media screen and (max-width : 749px) {
+    .col-12.col-md-2.text-center.evenbleu {
+        background-color: #336970 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+    }
+    .col-12.col-md-8.d-flex.flex-column.flex-md-row.align-items-md-center.justify-content-md-around {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width : 576px) and (max-width : 767px) {
+    .col-12.col-md-2.text-center.evenbleu {
+        background-color: #336970 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+    }
+    .col-12.col-md-8.d-flex.flex-column.flex-md-row.align-items-md-center.justify-content-md-around {
+        margin-top: 20px;
+    }
+    .box1 {
+        display: none;
+    }
+    .box2 {
+        display: none;
+    }
+    .box3 {
+        display: none;
+    }
+    .box4 {
+        display: none;
+    }
+    .box5 {
+        display: none;
+    }
+    .box6 {
+        display: none;
+    }
+    .box7 {
+        display: none;
+    }
+    footer {
+        min-height: 100vh;
+    }
+    .col-12.col-md-6.imgabout{
+        min-height: 50vh;
+    }
+    .col-12.col-md-6.bar{
+        min-height: 50vh;
+    }
+    .col-12.col-md-6.imgdej {
+        min-height: 50vh;
+    }
+    .col-12.col-md-6.text-center {
+        padding: 20px;
+    }
+    div#mapid {
+        min-height: 40vh;
+    }
+}
+@media screen and (max-width : 699px) {
+    section#petitdej {
+        background: url(media/petitdéjDesktop.jpg) fixed;
+    } 
+}
