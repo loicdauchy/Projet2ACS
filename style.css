@@ -35,16 +35,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 a.nav-link {
     color: white !important;
     text-align: center;
-    background-color: grey;
-    border: 2px groove white;
-    border-radius: 71px 71px 71px 71px;
     width: 90%;
-    height: 40px;
+    height: 20px;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 ul.navbar-nav.ml-auto {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 #logo {
     width: 50px;
@@ -1179,4 +1176,8 @@ a.linkcontact {
     p.ou {
         margin-top: 50px;
     }
+}
+
+@media screen and (max-height: 500px) {
+    
 }
